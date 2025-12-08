@@ -59,25 +59,25 @@ function mostraResultado(){
     
 }
 
-//crie uma função podiumMedalhas
-//E verifique a quantidade de pontos
-//  - Se pontos igual a 3 ganha bronze, dentro dessa condicional:
-//    Utilize a linha de código abaixo para modificar o CSS e inserir uma medalha
-//    caixaPrincipal.style.backgroundImage = "url('img/bronze.png')";
-//    altere o textContent do caixaPerguntas para "Resultado da competição: 3 pontos é BRONZE!"
-//  - Se pontos igual a 4 ganha prata
-//    Utilize a linha de código abaixo para modificar o CSS e inserir uma medalha
-//    caixaPrincipal.style.backgroundImage = "url('img/prata.png')";
-//    altere o textContent do caixaPerguntas para "Resultado da competição: 4 pontos é PRATA!"
-//  - Se pontos igual a 5 ganha ouro
-//    Utilize a linha de código abaixo para modificar o CSS e inserir uma medalha
-//    caixaPrincipal.style.backgroundImage = "url('img/ouro.png')";
-//    altere o textContent do caixaPerguntas para "Resultado da competição: 5 pontos é OURO!"
-//  - Se pontos menor que 3
-//    Utilize a linha de código abaixo para modificar o CSS e inserir uma medalha
-//    caixaPrincipal.style.backgroundImage = "url('img/perdeu.png')";
-//    altere o textContent do caixaPerguntas para "Resultado da competição: PERDEU!";
-//2 Dentro de cada SE altere o conteúdo de texto de caixaPerguntas exemplo
-//     Quando ouro coloque "Resultado da competição: 3 pontos é BRONZE!";
+let pontos = 0;
 
+function podiumMedalhas() {
+
+  if (pontos === 3) {
+    caixaPrincipal.style.backgroundImage = "url('img/bronze.png')";
+    caixaPerguntas.textContent = "Resultado da competição: 3 pontos é BRONZE!";
+
+  } else if (pontos === 4) {
+    caixaPrincipal.style.backgroundImage = "url('img/prata.png')";
+    caixaPerguntas.textContent = "Resultado da competição: 4 pontos é PRATA!";
+
+  } else if (pontos === 5) {
+    caixaPrincipal.style.backgroundImage = "url('img/ouro.png')";
+    caixaPerguntas.textContent = "Resultado da competição: 5 pontos é OURO!";
+
+  } else if (pontos < 3) {
+    caixaPrincipal.style.backgroundImage = "url('img/perdeu.png')";
+    caixaPerguntas.textContent = "Resultado da competição: PERDEU!";
+  }
+}
 mostraPergunta(); 
