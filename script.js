@@ -52,8 +52,8 @@ function respostaSelecionada(opcaoSelecionada){
 }
 
 function mostraResultado(){
-    textoResultado.textContent = historiaFinal;
     caixaPerguntas.textContent = "Resultado";
+    textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
     // chame a função podiumMedalhas aqui
     
@@ -81,4 +81,5 @@ function podiumMedalhas() {
   }
 }
 mostraPergunta(); 
+
 
