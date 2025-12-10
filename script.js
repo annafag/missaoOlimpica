@@ -2,7 +2,7 @@ const modalidades = ["Ginástica", "Judô", "Surfe", "Vôlei"];
 
 //Com base na constante modalidade, 
 //Coloque o número que represente o esporte do seu grupo
-const escolha = ?;
+const escolha = 3;
 
 document.querySelector('body').style.backgroundImage = "url('img/"+modalidades[escolha]+".png')";
 document.querySelector('title').textContent = "Missão Olímpica | "+modalidades[escolha];
@@ -55,8 +55,8 @@ function mostraResultado(){
     caixaPerguntas.textContent = "Resultado";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
-    // chame a função podiumMedalhas aqui
-    
+
+    podiumMedalhas();
 }
 
 let pontos = 0;
@@ -84,3 +84,4 @@ function podiumMedalhas() {
     caixaPerguntas.textContent = "Resultado da competição: PERDEU!";
   }
 }
+
