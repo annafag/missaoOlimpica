@@ -64,21 +64,23 @@ let pontos = 0;
 function podiumMedalhas() {
 
   if (pontos === 3) {
+    // medalha de bronze
     caixaPrincipal.style.backgroundImage = "url('img/bronze.png')";
     caixaPerguntas.textContent = "Resultado da competição: 3 pontos é BRONZE!";
 
   } else if (pontos === 4) {
+    // medalha de prata
     caixaPrincipal.style.backgroundImage = "url('img/prata.png')";
     caixaPerguntas.textContent = "Resultado da competição: 4 pontos é PRATA!";
 
   } else if (pontos === 5) {
+    // medalha de ouro
     caixaPrincipal.style.backgroundImage = "url('img/ouro.png')";
     caixaPerguntas.textContent = "Resultado da competição: 5 pontos é OURO!";
 
   } else if (pontos < 3) {
+    // perdeu
     caixaPrincipal.style.backgroundImage = "url('img/perdeu.png')";
     caixaPerguntas.textContent = "Resultado da competição: PERDEU!";
   }
 }
-
-mostraPergunta();
