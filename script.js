@@ -20,7 +20,7 @@ let historiaFinal = "";
 
 //Assim como a variável atual (acima)
 //Crie uma variável com o nome pontos que inicie com 0
-
+let pontos = 0;
 
 function mostraPergunta(){
     if(atual >= perguntas[escolha].length){
@@ -55,11 +55,9 @@ function mostraResultado(){
     caixaPerguntas.textContent = "Resultado";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
-
-    podiumMedalhas();
+ podiumMedalhas();
+    
 }
-
-let pontos = 0;
 
 function podiumMedalhas() {
 
@@ -84,6 +82,3 @@ function podiumMedalhas() {
     caixaPerguntas.textContent = "Resultado da competição: PERDEU!";
   }
 }
-
-
-
