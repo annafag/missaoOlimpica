@@ -83,4 +83,5 @@ function podiumMedalhas() {
   }
 }
 
-mostrarPergunta();
+mostraPergunta();
+
