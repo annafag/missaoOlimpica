@@ -82,3 +82,5 @@ function podiumMedalhas() {
     caixaPerguntas.textContent = "Resultado da competição: PERDEU!";
   }
 }
+
+mostrarPergunta();
